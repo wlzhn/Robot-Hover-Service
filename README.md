@@ -62,6 +62,8 @@ should return web service's version:
 1.0
 ```
 
+### Resources
+
 To generate the output for solving the specified problem, please use a POST request:
 
 ```
