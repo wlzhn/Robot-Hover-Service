@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+	<bean id="mongoDBWriterrImpl" class="com.robot.dao.MongoDBWriterImpl">
+		<constructor-arg type = "java.lang.String" value="localhost"></constructor-arg>
+		<constructor-arg type="int" value="27017"></constructor-arg>
+		<constructor-arg type = "java.lang.String" value="testDB"></constructor-arg>
+		<constructor-arg type = "java.lang.String" value="testCol"></constructor-arg>
+    </bean>
+    
+    <bean id="inputValidatorImpl" class="com.robot.utility.InputValidatorImpl"></bean>
+    
+    <bean id="inputValidatorImpl2" class="com.robot.utility.InputValidatorImpl2"></bean>
+    
+    <bean id="objectGeneratorImpl" class="com.robot.utility.ObjectGeneratorImpl"></bean>
+    
+    <bean id="robotHoverImpl" class="com.robot.logic.RobotHoverImpl"></bean>
+</beans>
