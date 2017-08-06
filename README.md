@@ -13,7 +13,7 @@ This is a solution to the test https://github.com/lampkicking/java-backend-test.
 
 Since the problem requires every input and output written into a database, please make sure MongoDB is installed.
 
-Once it is installed, please check the parameters specified in 
+Once it is installed, please check the parameters specified in Spring's configuration file
 
 ```
 {RobotHoverService}\src\main\resources\applicationcontext.xml
@@ -28,7 +28,7 @@ The default settings are as follows:
 * Database name - testDB
 * Collection name - testCol
 
-Note: the web service also provides a resource which generate the same results excepting writting input and output into database. Therefore, This resource can be used if using MongoDB is not practical.
+Note: the web service also provides a resource to generate the same results without writting input and output into database. Therefore, This resource can be used if using MongoDB is not practical.
 
 ### Build From Source
 
@@ -60,7 +60,7 @@ To generate the output for solving the specified problem, please use a POST requ
 {url}:{port}/{webservice name}/rest/robot/hover
 ```
 
-along with the json payload like:
+along with the JSON payload like:
 
 ```
 {
@@ -91,7 +91,7 @@ Alternatively, to generate the output without writing into MongoDB, please use a
 
 and the output should be the same as above.
 
-Note: the syntax and the input values in the json payload will be validated in the web service before generating outputs, so error message(s) will be returned if the validator finds something wrong. For example, if the payload does not have "roomSize" field:
+Note: the syntax and the input values in the JSON payload will be validated in the web service before generating outputs, so error message(s) will be returned if the validator finds something wrong. For example, if the payload does not have "roomSize" field:
 
 ```
 {
