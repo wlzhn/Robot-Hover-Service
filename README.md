@@ -46,7 +46,15 @@ Once the project is built successfully, the .war file will be generated in the t
 
 A simple GET request can be used to test if the web service is running:
 
+```
 {host}:{port}/{webservice name}/rest/robot/version 
+```
+
+Example:
+
+```
+http://localhost:8080/RobotHoverService/rest/robot/version
+```
 
 should return web service's version:
 
