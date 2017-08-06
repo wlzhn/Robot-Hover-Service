@@ -23,7 +23,7 @@ and change the relevant parameters in the bean with id "mongoDBWriterImpl".
 
 The default settings are as follows:
 
-* URL - localhost
+* Host - localhost
 * Port number - 27017
 * Database name - testDB
 * Collection name - testCol
@@ -46,7 +46,7 @@ Once the project is built successfully, the .war file will be generated in the t
 
 A simple GET request can be used to test if the web service is running:
 
-{url}:{port}/{webservice name}/rest/robot/version 
+{host}:{port}/{webservice name}/rest/robot/version 
 
 should return web service's version:
 
@@ -57,7 +57,7 @@ should return web service's version:
 To generate the output for solving the specified problem, please use a POST request:
 
 ```
-{url}:{port}/{webservice name}/rest/robot/hover
+{host}:{port}/{webservice name}/rest/robot/hover
 ```
 
 along with the JSON payload like:
@@ -86,7 +86,7 @@ and these input and output will be written the MongoDB.
 Alternatively, to generate the output without writing into MongoDB, please use a POST request:
 
 ```
-{url}:{port}/{webservice name}/rest/robot/hovernodb
+{host}:{port}/{webservice name}/rest/robot/hovernodb
 ```
 
 and the output should be the same as above.
