@@ -115,7 +115,7 @@ Note: the syntax and the input values in the JSON payload will be validated in t
 }
 ```
 
-the following error message will be return:
+the following error message will return:
 
 ```
 {"errorCode":412,"message":"Invalid input. 'roomSize' field does not exist."}
